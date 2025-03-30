@@ -383,7 +383,7 @@ function clearFilter() {
 };
 
 
-<!----------------------------全局--------------------------------->
+// <!----------------------------全局--------------------------------->
 var itemsPerCol = 20;
 
 function htmlSuccess(str) {
@@ -642,7 +642,7 @@ function showTable_Cluster(dictList, res_elem) {
     $('div.popover').hide();
 };
 
-<!----------------------------汉汉CC--------------------------------->
+//<!----------------------------汉汉CC--------------------------------->
 var retData_backup; //全局变量保存返回值原始数据。
 var description_backup;
 
@@ -1115,7 +1115,7 @@ $(document).ready(function () {
             }
     });
 });
-<!----------------------------英英EE--------------------------------->        
+// <!----------------------------英英EE--------------------------------->        
 var retData_backup_EE; //全局变量保存返回值原始数据。
 var description_backup_EE;
 
@@ -1464,7 +1464,7 @@ $(document).ready(function () {
     });
 });
 
-<!----------------------------汉英CE--------------------------------->
+// <!----------------------------汉英CE--------------------------------->
 var retData_backup_CE; //全局变量保存返回值原始数据。
 var description_backup_CE;
 
@@ -1812,7 +1812,7 @@ $(document).ready(function () {
             }
     });
 });
-<!----------------------------英汉EC--------------------------------->
+// <!----------------------------英汉EC--------------------------------->
 var retData_backup_EC; //全局变量保存返回值原始数据。
 var description_backup_EC;
 
@@ -2279,7 +2279,7 @@ $(document).ready(function () {
     });
 });
 
-<!----------------------------英Outlook--------------------------------->
+// <!----------------------------英Outlook--------------------------------->
 $(document).ready(function () {
     $("#description_EO").keypress(function(e) {
         if(e.keyCode == 13)
@@ -2292,12 +2292,12 @@ $(document).ready(function () {
     });
 });
 
-<!--------筛选和排序--------->
+// <!--------筛选和排序--------->
 $(document).ready(function(){
   $("#flip_EE").click(function(){
     $("#panel_EE").slideToggle("fast", function(){
     if($(this).is(":visible")){
-        $("#flip_EE").html('Clear and Hide Filter <span class="glyphicon glyphicon-off"></span>')} <!--和排序<span class="glyphicon glyphicon-sort"></span>-->
+        $("#flip_EE").html('Clear and Hide Filter <span class="glyphicon glyphicon-off"></span>')} // <!--和排序<span class="glyphicon glyphicon-sort"></span>-->
     else{
         clearAlert();
         $("#filter_EE div").find("*").removeAttr("disabled");
@@ -2328,7 +2328,7 @@ $(document).ready(function(){
   $("#flip_CE").click(function(){
     $("#panel_CE").slideToggle("fast", function(){
     if($(this).is(":visible")){
-        $("#flip_CE").html('清除并收起 筛选器 <span class="glyphicon glyphicon-off"></span>')} <!--和排序<span class="glyphicon glyphicon-sort"></span>-->
+        $("#flip_CE").html('清除并收起 筛选器 <span class="glyphicon glyphicon-off"></span>')} // <!--和排序<span class="glyphicon glyphicon-sort"></span>-->
     else{
         clearAlert();
         $("#filter_CE div").find("*").removeAttr("disabled");
@@ -2391,7 +2391,7 @@ $(document).ready(function(){
   $("#flip").click(function(){
     $("#panel").slideToggle("fast", function(){
     if($(this).is(":visible")){
-        $("#flip").html('清除并收起 筛选器 <span class="glyphicon glyphicon-off"></span>')} <!--和排序<span class="glyphicon glyphicon-sort"></span>-->
+        $("#flip").html('清除并收起 筛选器 <span class="glyphicon glyphicon-off"></span>')} // <!--和排序<span class="glyphicon glyphicon-sort"></span>-->
     else{
         clearAlert();
         $("#filter_CN div").find("*").removeAttr("disabled");

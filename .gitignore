@@ -1,0 +1,10 @@
+__pycache__
+
+*.txt
+*.npy
+*.model
+*.json
+*.sqlite3
+
+static/admin
+staticfiles

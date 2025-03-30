@@ -6,7 +6,7 @@ from datetime import datetime
 from pytorch_transformers import *
 
 from sklearn.cluster import KMeans
-kmeans = KMeans(n_clusters=6, n_jobs=1, random_state=0, init='k-means++', max_iter=10)
+kmeans = KMeans(n_clusters=6, random_state=0, init='k-means++', max_iter=10)
 
 def md5(str):
     m = hashlib.md5()

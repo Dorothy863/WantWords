@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,8 +7,8 @@
   <meta name="baidu-site-verification" content="dZIvpHcMuj" />
   <meta baidu-gxt-verify-token="2edaaf8500440997a3b3b52a91b3e43e">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <link rel="shortcut icon" href="../static/image/zm2.ico">
-  <link rel="bookmark" href="../static/image/zm2.ico">
+  <link rel="shortcut icon" href="{% static 'images/zm2.ico' %}">
+  <link rel="bookmark" href="{% static 'images/zm2.ico' %}">
   <meta name="keywords" content="万词王; wordwants; 反向; 词典; 语言; 写作; 助手; 查询; 清华大学; 自然语言; 实验室; 双语; 汉语; 英语; English; Chinese; word; corpus; reverse; dictionary; look up; search; find">
   <meta name="description" content="万词王wordwants是一个反向词典系统,由清华大学自然语言处理实验室出品,广泛收录了多部词典数据,通过深度学习算法,实现通过描述意思来查询词语，解决您的用词烦恼。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
@@ -18,7 +20,7 @@
   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-  <script language="javascript" type="text/javascript" src="../static/js/home.js"></script>
+  <script language="javascript" type="text/javascript" src="{% static 'js/home.js' %}"></script>
 
   <style>
   .ui-tabs .ui-tabs-nav {
@@ -50,7 +52,7 @@
       font-weight:600;
       color: #000000b0;
   }
-  .clear {display: none;position: absolute;width: 16px;height: 16px; right: 84px; margin: 19px 0 0 -25px;background:url(../static/images/clear.png) no-repeat;outline: none; z-index: 3;}
+  .clear {display: none;position: absolute;width: 16px;height: 16px; right: 84px; margin: 19px 0 0 -25px;background:url("{% static 'images/clear.png' %}") no-repeat;outline: none; z-index: 3;}
   </style>
   
     <style>
@@ -128,7 +130,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
         <div class="container-fluid"> 
             <div class="navbar-header" style="height: 65px;"> 
-                <a class="navbar-brand" href="../home" style="padding-top: 0px;"><img src="https://wantwords.thunlp.org/static/image/logo.png" alt="反向词典" style="height:55px;margin-left: 20px;margin-top: 5px;"/></a> 
+                <a class="navbar-brand" href="../home" style="padding-top: 0px;"><img src="{% static 'images/logo.png' %}" alt="反向词典" style="height:55px;margin-left: 20px;margin-top: 5px;"/></a> 
             </div>
             <ul class="nav navbar-nav" style="float: right;"> 
                 <li class="active"><a href="../home" id="id_home">反向词典主页</a></li> 
@@ -144,7 +146,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
         <div class="container-fluid"> 
             <div class="navbar-header" style="height: 65px;"> 
-                <a class="navbar-brand" href="../home" style="padding-top: 0px;"><img src="https://wantwords.thunlp.org/static/image/logo.png" alt="反向词典" style="height:55px;margin-left: 0px;margin-top: 5px;"/></a> 
+                <a class="navbar-brand" href="../home" style="padding-top: 0px;"><img src="{% static 'images/logo.png' %}" alt="反向词典" style="height:55px;margin-left: 0px;margin-top: 5px;"/></a> 
                 <div class="btn-group" style="float: right; margin-right: 50px;">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="color: #286090;border-color: #f8f8f8;background-color: #f8f8f8;font-size: 1.5em;margin-top: 10px;">
                         <span class="glyphicon glyphicon-align-justify"></span> <span class="caret"></span>
@@ -185,7 +187,7 @@
             <div id="filter_CN">
                 <div class="panel panel-default visible-xs">
                     <div id="flip" class="panel-heading" style="text-align:center;">开启 筛选器 <span class="glyphicon glyphicon-filter"></span></div>
-                    <div id="panel" class="panel-collapse collapse in" style="display:none; padding=50px">
+                    <div id="panel" class="panel-collapse collapse in" style="display:none; padding:50px;">
                         <form role="form">
                         <div class="row" style="margin:10px;">
                             <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1" style="margin-top:2px; margin-bottom:2px;">
@@ -458,7 +460,7 @@
             <div id="filter_EE">
                 <div class="panel panel-default visible-xs">
                     <div id="flip_EE" class="panel-heading" style="text-align:center;">Open Filter <span class="glyphicon glyphicon-filter"></span></div>
-                    <div id="panel_EE" class="panel-collapse collapse in" style="display:none; padding=50px">
+                    <div id="panel_EE" class="panel-collapse collapse in" style="display:none; padding:50px;">
                         <form role="form">
                         <div class="row" style="margin:10px;">
                             <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="margin-top:2px; margin-bottom:2px;">
@@ -567,7 +569,7 @@
             <div id="filter_CE">
                 <div class="panel panel-default visible-xs">
                     <div id="flip_CE" class="panel-heading" style="text-align:center;">开启 筛选器 <span class="glyphicon glyphicon-filter"></span></div>
-                    <div id="panel_CE" class="panel-collapse collapse in" style="display:none; padding=50px">
+                    <div id="panel_CE" class="panel-collapse collapse in" style="display:none; padding:50px;">
                         <form role="form">
                         <div class="row" style="margin:10px;">
                             <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="margin-top:2px; margin-bottom:2px;">
@@ -676,7 +678,7 @@
             <div id="filter_EC">
                 <div class="panel panel-default visible-xs">
                     <div id="flip_EC" class="panel-heading" style="text-align:center;">Open Filter <span class="glyphicon glyphicon-filter"></span></div>
-                    <div id="panel_EC" class="panel-collapse collapse in" style="display:none; padding=50px">
+                    <div id="panel_EC" class="panel-collapse collapse in" style="display:none; padding:50px;">
                         <form role="form">
                         <div class="row" style="margin:10px;">
                             <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="margin-top:2px; margin-bottom:2px;">
