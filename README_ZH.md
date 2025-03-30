@@ -47,6 +47,9 @@ WantWords的核心模型为我们此前发表在AAAI-20上的一篇论文提出�
 
 可从[此处](https://cloud.tsinghua.edu.cn/d/811dcb428ed24480bc60/)下载并解压模型和数据到 `BASE_PATH/website_RD/` 以构建此系统。
 
+### fork change
+ask me to search my baidupan for "万词王".
+
 ### 关键依赖
 
 * Django==2.2.5
