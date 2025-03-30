@@ -47,6 +47,10 @@ The core model of WantWords is based on our proposed **Multi-channel Reverse Dic
 
 You can [download](https://cloud.tsinghua.edu.cn/d/811dcb428ed24480bc60/) and decompress the pre-trained models and data to `BASE_PATH/website_RD/` to reimplement the system.
 
+### fork change：
+ask me to search my baidupan for "万词王".
+
+
 ### Key Requirements
 
 * Django==2.2.5
